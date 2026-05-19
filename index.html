@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal portfolio of a Frontend Developer" />
+  <title>Ambika | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a class="brand" href="#home" aria-label="Go to Home">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span class="brand-text">Ambika</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Section navigation">
+        <a class="nav-link" href="#home" data-nav="home">Home</a>
+        <a class="nav-link" href="#about" data-nav="about">About</a>
+        <a class="nav-link" href="#skills" data-nav="skills">Skills</a>
+        <a class="nav-link" href="#projects" data-nav="projects">Projects</a>
+        <a class="nav-link" href="#contact" data-nav="contact">Contact</a>
+        <a class="nav-cta" href="#contact" data-nav="contact">Let’s Talk</a>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <button class="hamburger" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+        <span class="hamburger-lines" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <div class="mobile-menu-inner">
+        <a class="mobile-link" href="#home" data-nav="home">Home</a>
+        <a class="mobile-link" href="#about" data-nav="about">About</a>
+        <a class="mobile-link" href="#skills" data-nav="skills">Skills</a>
+        <a class="mobile-link" href="#projects" data-nav="projects">Projects</a>
+        <a class="mobile-link" href="#contact" data-nav="contact">Contact</a>
+        <a class="mobile-cta" href="#contact" data-nav="contact">Let’s Talk</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / HOME -->
+    <section id="home" class="section hero" aria-label="Hero">
+      <div class="container hero-grid">
+        <!-- Left content -->
+        <div class="hero-content section-reveal">
+          <div class="pill">
+            <span class="pill-dot" aria-hidden="true"></span>
+            <span>Frontend Developer</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I’m <span class="gradient-text">Ambika</span>
+            <br />
+            <span class="typing" aria-label="Typing introduction"> </span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Building clean, modern, responsive interfaces with smooth interactions and thoughtful UX.
+          </p>
+
+          <div class="hero-actions" role="group" aria-label="Primary actions">
+            <a class="btn btn-primary" href="assets/resume.pdf" download>
+              Download Resume
+            </a>
+            <a class="btn btn-ghost" href="#contact" data-scroll>
+              Contact Me
+            </a>
+          </div>
+
+          <div class="social" aria-label="Social links">
+            <a class="social-link" href="https://github.com/ambiika5" target="_blank" rel="noopener" aria-label="GitHub">
+              <!-- GitHub icon (inline SVG) -->
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="icon"><path fill="currentColor" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.499.092.682-.217.682-.483 0-.237-.009-.866-.014-1.701-2.782.605-3.369-1.342-3.369-1.342-.455-1.161-1.11-1.471-1.11-1.471-.908-.621.069-.609.069-.609 1.004.071 1.531 1.033 1.531 1.033.892 1.53 2.341 1.089 2.91.833.091-.647.35-1.09.636-1.34-2.22-.253-4.555-1.113-4.555-4.951 0-1.094.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.203 2.397.1 2.65.64.7 1.028 1.594 1.028 2.688 0 3.847-2.339 4.695-4.566 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.523 2 12 2Z"/></svg>
+              <span class="sr-only">GitHub</span>
+            </a>
+            <a class="social-link" href="www.linkedin.com/in/ambika-hambarde-240306391" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <!-- LinkedIn icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="icon"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.371 4.267 5.455v6.286zM5.337 7.433c-1.083 0-1.959-.876-1.959-1.959 0-1.084.876-1.96 1.959-1.96 1.084 0 1.96.876 1.96 1.96 0 1.083-.876 1.959-1.96 1.959zM7.119 20.452H3.556V9h3.563v11.452z"/></svg>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+            <a class="social-link" href="#" target="_blank" rel="noopener" aria-label="Twitter/X">
+              <!-- Twitter/X icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="icon"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26L22.8 21.75h-6.19l-4.838-6.04-5.29 6.04H2.17l7.73-8.84L1.2 2.25h6.33l4.376 5.47 4.334-5.47zm-1.16 17.52h1.833L7.04 4.126H5.08l12.004 15.644z"/></svg>
+              <span class="sr-only">X</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right profile image -->
+        <div class="hero-media section-reveal" aria-label="Profile image">
+          <div class="profile-card">
+            <div class="profile-glow" aria-hidden="true"></div>
+            <img
+              class="profile-img"
+              src="assets/profile.jpeg"
+              alt="Profile photo"
+              loading="lazy"
+              onerror="this.style.display='none'; this.parentElement.querySelector('.profile-fallback').style.display='grid';"
+            />
+            <div class="profile-fallback" aria-hidden="true">
+              <span class="profile-fallback-text">Your Photo</span>
+            </div>
+          </div>
+
+          <div class="stat-row" aria-label="Quick stats">
+            <div class="stat">
+              <div class="stat-value">3</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value">1</div>
+              <div class="stat-label">Goal: Clean UI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section-pad" aria-label="About">
+      <div class="container">
+        <div class="section-heading section-reveal">
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass-card section-reveal">
+            <h3 class="card-title">Introduction</h3>
+            <p class="card-text">
+              I’m a frontend developer passionate about building responsive, accessible user interfaces.
+              I enjoy turning ideas into smooth, interactive web experiences.
+            </p>
+
+            <div class="info-list">
+              <div class="info-item">
+                <span class="info-key">Location</span>
+                <span class="info-val">India</span>
+              </div>
+              <div class="info-item">
+                <span class="info-key">Focus</span>
+                <span class="info-val">tech fields</span>
+              </div>
+              <div class="info-item">
+                <span class="info-key">Tech</span>
+                <span class="info-val">HTML · CSS · JS</span>
+              </div>
+            </div>
+          </article>
+
+          <aside class="about-cards section-reveal" aria-label="Education and objective">
+            <div class="glass-card">
+              <h3 class="card-title">Education</h3>
+              <ul class="list">
+                <li>
+                  <strong>BCA (Computer Application)</strong>
+                  <div class="muted">2024 - 2027</div>
+                </li>
+                <li>
+                  <strong>Web Development</strong>
+                  <div class="muted">Continuous learning</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="glass-card">
+              <h3 class="card-title">Career Objective</h3>
+              <p class="card-text">
+                To craft high-performing, user-centered web experiences and grow as a frontend engineer.
+              </p>
+            </div>
+
+            <div class="glass-card">
+              <h3 class="card-title">What I Value</h3>
+              <div class="chips" aria-label="Values">
+                <span class="chip">Accessibility</span>
+                <span class="chip">Performance</span>
+                <span class="chip">Design Systems</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-pad" aria-label="Skills">
+      <div class="container">
+        <div class="section-heading section-reveal">
+          <h2>Skills</h2>
+        </div>
+
+        <div class="skills-grid" role="list">
+          <div class="skill-card section-reveal" role="listitem" data-skill="HTML" data-percent="92">
+            <div class="skill-top">
+              <h3>HTML</h3>
+              <span class="skill-percent">92%</span>
+            </div>
+            <div class="bar" aria-hidden="true"><div class="bar-fill"></div></div>
+            <p class="muted">Semantic structure and accessibility-first layouts.</p>
+          </div>
+
+          <div class="skill-card section-reveal" role="listitem" data-skill="CSS" data-percent="90">
+            <div class="skill-top">
+              <h3>CSS</h3>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="bar" aria-hidden="true"><div class="bar-fill"></div></div>
+            <p class="muted">Modern styling, animations, and responsive design.</p>
+          </div>
+
+          <div class="skill-card section-reveal" role="listitem" data-skill="JavaScript" data-percent="88">
+            <div class="skill-top">
+              <h3>JavaScript</h3>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="bar" aria-hidden="true"><div class="bar-fill"></div></div>
+            <p class="muted">Vanilla JS, DOM APIs, and smooth UI interactions.</p>
+          </div>
+
+          <div class="skill-card section-reveal" role="listitem" data-skill="Node.js" data-percent="78">
+            <div class="skill-top">
+              <h3>Node.js</h3>
+              <span class="skill-percent">50%</span>
+            </div>
+            <div class="bar" aria-hidden="true"><div class="bar-fill"></div></div>
+            <p class="muted">APIs, server-side tooling, and backend integration concepts.</p>
+          </div>
+
+          <div class="skill-card section-reveal" role="listitem" data-skill="MongoDB" data-percent="76">
+            <div class="skill-top">
+              <h3>MongoDB</h3>
+              <span class="skill-percent">55%</span>
+            </div>
+            <div class="bar" aria-hidden="true"><div class="bar-fill"></div></div>
+            <p class="muted">Document modeling and database fundamentals.</p>
+          </div>
+
+          <div class="skill-card section-reveal" role="listitem" data-skill="GitHub" data-percent="86">
+            <div class="skill-top">
+              <h3>GitHub</h3>
+              <span class="skill-percent">86%</span>
+            </div>
+            <div class="bar" aria-hidden="true"><div class="bar-fill"></div></div>
+            <p class="muted">Version control, collaboration, and project workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-pad" aria-label="Projects">
+      <div class="container">
+        <div class="section-heading section-reveal">
+          <h2>Projects</h2><br>
+          
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card section-reveal">
+            <div class="project-media">
+              <img
+                class="project-img"
+                src="assets/project-1.jpg"
+                alt="Project screenshot"
+                loading="lazy"
+                onerror="this.style.opacity='0.25'; this.style.filter='grayscale(1)';"
+              />
+              <div class="project-badge">Featured</div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Student hub</h3>
+              <p class="project-desc">
+                allows users to manage notes, create study timetables, and access essential study tools through a simple and user-friendly interface.
+              </p>
+
+              <div class="tech-tags" aria-label="Tech stack">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+
+              <div class="project-actions" role="group" aria-label="Project actions">
+                <a class="btn btn-primary small" href="https://ambiika5.github.io/student-resource-hub/" target="_blank" rel="noopener">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card section-reveal">
+            <div class="project-media">
+              <img
+                class="project-img"
+                src="assets/project-2.jpg"
+                alt="Project screenshot"
+                loading="lazy"
+                onerror="this.style.opacity='0.25'; this.style.filter='grayscale(1)';"
+              />
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Smart outfit planner</h3>
+              <p class="project-desc">
+                A web-based application that helps users organize their wardrobe and create stylish outfits easily. 
+              </p>
+
+              <div class="tech-tags" aria-label="Tech stack">
+                <span class="tag">JavaScript</span>
+                <span class="tag">CSS</span>
+              </div>
+
+              <div class="project-actions" role="group" aria-label="Project actions">
+                <a class="btn btn-primary small" href="https://ambiika5.github.io/smart-outfit-planner/" target="_blank" rel="noopener">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card section-reveal">
+            <div class="project-media">
+              <img
+                class="project-img"
+                src="assets/project-3.jpg"
+                alt="Project screenshot"
+                loading="lazy"
+                onerror="this.style.opacity='0.25'; this.style.filter='grayscale(1)';"
+              />
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Portfolio website</h3>
+              <p class="project-desc">
+                Responsive landing page sections introducing skillsets to user.
+              </p>
+
+              <div class="tech-tags" aria-label="Tech stack">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+
+              <div class="project-actions" role="group" aria-label="Project actions">
+                <a class="btn btn-primary small" href="#" target="_blank" rel="noopener">Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-pad" aria-label="Contact">
+      <div class="container">
+        <div class="section-heading section-reveal">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="contact-grid">
+          <form class="contact-form glass-card section-reveal" id="contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+              <span class="field-error" data-error-for="name" aria-live="polite"></span>
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+              <span class="field-error" data-error-for="email" aria-live="polite"></span>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+              <span class="field-error" data-error-for="message" aria-live="polite"></span>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <div class="form-note" role="status" aria-live="polite" id="form-note"></div>
+          </form>
+
+          <aside class="contact-side section-reveal" aria-label="Social links and availability">
+            <div class="glass-card">
+              <h3 class="card-title">Let’s connect</h3>
+              <p class="card-text">Prefer social? Reach out through these links.</p>
+
+              <div class="social social-vertical" aria-label="Contact social links">
+                <a class="social-link" href="#" target="_blank" rel="noopener" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="icon"><path fill="currentColor" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.499.092.682-.217.682-.483 0-.237-.009-.866-.014-1.701-2.782.605-3.369-1.342-3.369-1.342-.455-1.161-1.11-1.471-1.11-1.471-.908-.621.069-.609.069-.609 1.004.071 1.531 1.033 1.531 1.033.892 1.53 2.341 1.089 2.91.833.091-.647.35-1.09.636-1.34-2.22-.253-4.555-1.113-4.555-4.951 0-1.094.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.748-1.026 2.748-1.026.546 1.378.203 2.397.1 2.65.64.7 1.028 1.594 1.028 2.688 0 3.847-2.339 4.695-4.566 4.943.359.31.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.523 2 12 2Z"/></svg>
+                </a>
+                <a class="social-link" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="icon"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.371 4.267 5.455v6.286zM5.337 7.433c-1.083 0-1.959-.876-1.959-1.959 0-1.084.876-1.96 1.959-1.96 1.084 0 1.96.876 1.96 1.96 0 1.083-.876 1.959-1.96 1.959zM7.119 20.452H3.556V9h3.563v11.452z"/></svg>
+                </a>
+                <a class="social-link" href="#" target="_blank" rel="noopener" aria-label="Twitter/X">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="icon"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26L22.8 21.75h-6.19l-4.838-6.04-5.29 6.04H2.17l7.73-8.84L1.2 2.25h6.33l4.376 5.47 4.334-5.47zm-1.16 17.52h1.833L7.04 4.126H5.08l12.004 15.644z"/></svg>
+                </a>
+              </div>
+
+              <div class="contact-meta">
+                <div class="meta-item">
+                  <div class="meta-key">Email</div>
+                  <div class="meta-val">hambardeambika@example.com</div>
+                </div>
+                <div class="meta-item">
+                  <div class="meta-key">Availability</div>
+                  <div class="meta-val">Open for freelance</div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Ambika. All rights reserved.</span>
+      <a href="#home" class="footer-top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

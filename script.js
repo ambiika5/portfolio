@@ -240,7 +240,7 @@
       ['name', 'email', 'message'].forEach((f) => setError(f, ''));
     };
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       if (note) note.textContent = '';
       clearErrors();
@@ -269,11 +269,36 @@
         return;
       }
 
-      // Frontend-only confirmation
-      if (note) {
-        note.textContent = 'Message received (demo).';
+      // Backend submission
+      try {
+        if (note) note.textContent = 'Sending message...';
+
+        const res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ name, email, message })
+        });
+
+        const data = await res.json().catch(() => null);
+
+        if (!res.ok || !data?.ok) {
+          // If backend returns field errors, show them
+          const backendErrors = data?.errors;
+          if (Array.isArray(backendErrors)) {
+            backendErrors.forEach((err) => {
+              if (err?.field && err?.message) setError(err.field, err.message);
+            });
+          }
+          if (note) note.textContent = 'Could not send message. Please try again.';
+          return;
+        }
+
+        if (note) note.textContent = 'Message received.';
+        form.reset();
+      } catch (err) {
+        console.error('Contact submit error:', err);
+        if (note) note.textContent = 'Network error. Please try again.';
       }
-      form.reset();
     });
   }
 

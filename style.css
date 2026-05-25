@@ -73,11 +73,27 @@ a { color: inherit; text-decoration: none; }
   position: sticky;
   top: 0;
   z-index: 1000;
+  /* avoid any vertical stacking/overlay behavior */
+  width: 100%;
+
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   background: rgba(7, 10, 18, 0.62);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
+
+/* Prevent sticky navbar overlap issues on small screens */
+main {
+  position: relative;
+  z-index: 0;
+}
+
+/* Make sure the sticky navbar doesn't stack above sections */
+.navbar {
+  z-index: 10;
+}
+
+
 
 .nav-inner {
   height: var(--nav-h);
@@ -215,8 +231,10 @@ a { color: inherit; text-decoration: none; }
 
 /* Sections */
 .section {
-  padding-top: calc(var(--nav-h) * 0.65);
+  /* prevent sticky navbar from covering section heading/content */
+  padding-top: calc(var(--nav-h) * 1);
 }
+
 .section-pad { padding: 72px 0; }
 
 .hero {
